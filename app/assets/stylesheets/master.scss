@@ -1,5 +1,10 @@
 @import "bootstrap";
 
+body {
+  background: image_url('grunge_wall.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
 
 h1,
 h2,
@@ -13,6 +18,12 @@ h6,
 
 .btn {
     border-radius: 0;
+}
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 
