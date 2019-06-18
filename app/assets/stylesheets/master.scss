@@ -60,6 +60,14 @@ h6,
     text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
+
 .hero {
     background: image_url('hero.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
