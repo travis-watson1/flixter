@@ -159,8 +159,40 @@ ul .header .fa{
 
 .separator{
   border: 1px solid red;
+  width: 10%;
+}
+
+.separator1{
+  border: 1px solid black;
+  width: 20%;
 }
 
 a:hover{
   text-decoration: none;
+}
+
+#wordwrap{
+  white-space: pre-wrap; /* css-3 */    
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */    
+  white-space: -o-pre-wrap; /* Opera 7 */    
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.title{
+  overflow-wrap: break-word;
+}
+
+.flex-item-33{
+  flex: 0 0 33%;
+}
+
+.sized{
+  max-width: 33%;
+}
+
+
+.interest{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
