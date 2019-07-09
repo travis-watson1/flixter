@@ -43,28 +43,37 @@
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
+  <br>
+  <div  class="text-center">
   <%= image_tag current_course.image.url, class: 'img-fluid' %>
+  </div>
   <br>
   <%= link_to 'Preview as Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class="clr">
   <div class="text-center">
     <!-- Button trigger modal -->
+    <br>
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
       Add a new section...
     </button>
   </div>
-
+  <br>
+      <hr class="separator">
+      <br>
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
     <li data-update-url2="<%= instructor_section_path(section) %>" class="section-li">
       <div class="header">
         <span class="fa fa-ellipsis-v"></span>
-        <%= section.title %>
+        <%= section.title %><br>
+        <br>
       </div>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+      <div class="text-center">
+      <button type="button" class="btn btn-primary btn-md float-md-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
         New Lesson...
       </button>
+      </div>
       <br class="clr" />
       <br class="clr" />
       <ul class="lessons">
